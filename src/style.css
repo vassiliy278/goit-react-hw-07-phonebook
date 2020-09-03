@@ -1,0 +1,93 @@
+* {
+    box-sizing: border-box;
+}
+h1 {color: #afa}
+
+.title-appear {opacity: 0}
+.title-appear-active {opacity: 1; transition: all 1000ms}
+.title-appear-done {opacity: 1; transition: all 1000ms}
+
+.warn-enter {opacity: 0}
+.warn-enter-active {opacity: 1; transition: all 1000ms}
+.warn-exit {opacity: 1}
+.warn-exit-active {opacity: 0; transition: all 1000ms}
+ul {
+    margin: 0;
+    padding: 0;
+}
+li {
+    list-style: none;
+    display: flex;
+    /* margin: 0; */
+}
+.findElement{
+    background-color: rgba(255,255,255,0.4);
+    outline: 0;
+}
+.findElement::placeholder {
+    font-style: italic;
+}
+form {
+    margin: 5px 0px;
+    position: relative;
+}
+.warn {
+    position: absolute;
+    /* background-color: #afa; */
+    color: tomato;
+    font-style: italic;
+    width: 50%;
+    left: 0;
+    top: 10px;
+    text-align: left;
+    border: none
+}
+.name {
+    /* background-color: #afa; */
+    width: 50%;
+    text-align: left;
+    border: none;
+    outline: 0;
+}
+.number {
+    /* background-color: #ada; */
+    width: 30%;
+    text-align: left;
+    border: none;
+    border-left: 1px solid;
+    outline: 0;
+}
+.button {
+    color: #333;
+    width: 20%;
+    border: none;    
+    background-color: rgb(246, 200, 250);
+    outline: 0;
+}
+.button:hover {
+    background-color: rgb(247, 230, 139);
+}
+
+.listItem-enter, .filter-enter {opacity: 0}
+.listItem-enter-active, .filter-enter-active {opacity: 1; transition: opacity 500ms}
+.listItem-exit, .filter-exit {opacity: 1}
+.listItem-exit-active, .filter-exit-active {opacity: 0; transition: opacity 500ms}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    /* background-color: red; */
+}
+.listElement {
+    margin: 5px auto;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    border: 1px solid #bbb;
+    color: white;
+}
+span, input, button {
+    padding: 5px;
+}
